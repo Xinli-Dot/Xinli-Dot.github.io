@@ -1,36 +1,23 @@
-# Xin Li — Academic Website V2.0
+# Xin Li — Academic Website V3.0 (Responsive Edition)
 
-A bilingual, minimal editorial academic website, hosted free on GitHub Pages. No build tools required.
+This update resolves oversized desktop headlines, fixed visual proportions, and SVG label cropping. It maintains existing content and bilingual translation functionality.
 
-## Your exact GitHub repository
+## How to update your live GitHub Pages website
 
-Create a **public** repository named `Xinli-Dot.github.io` under your GitHub account `Xinli-Dot`.
+1. Open https://github.com/Xinli-Dot/Xinli-Dot.github.io
+2. Choose **Add file → Upload files**.
+3. Unzip this archive and drag **all contents** (including `index.html`, `assets/`, `README.md` and `.nojekyll`) into the repository root.
+4. Commit the changes; GitHub will overwrite files with matching paths.
+5. After Pages redeploys, hard refresh your site (Ctrl+Shift+R on Windows, Cmd+Shift+R on macOS).
 
-Then upload the **contents** of this folder into the repository root, including `.nojekyll`. In repository Settings → Pages, select **Deploy from a branch**, then **main** and **/(root)**. Site URL: https://xinli-dot.github.io/ (GitHub hostnames are case-insensitive).
+If GitHub's web upload workflow refuses replacement of a file, open the target file and use its pencil/Edit action to change content, or use GitHub Desktop to commit the complete replacement folder.
 
-## Update your profile
+## Site editing
 
-Edit `assets/content.js` to add verified affiliation, real email, Google Scholar, ORCID, CV and publication entries. Current name is "Xin Li" in both languages; Chinese characters were not assumed. The GitHub profile link is already populated.
+- `assets/style.css` — design, responsive layout and typography
+- `assets/content.js` — bilingual personal text and links
+- `assets/app.js` — bilingual interactions
+- `assets/science-art.svg` — replaceable hero illustration
+- `assets/photos/profile.jpg`, `research-1.jpg`, `research-2.jpg` — optional image slots
 
-## Add your own photos later
-
-Put files in `assets/photos/` using exactly these names:
-
-- `profile.jpg` — horizontal or wide portrait / lab / field photo for About, landscape recommended around 3:1. If using a portrait image, CSS may crop it; adjust `object-position` in `style.css`.
-- `research-1.jpg` — landscape research photograph (3:2 suggested)
-- `research-2.jpg` — second landscape photograph (3:2 suggested)
-
-The site automatically shows your photos when the files are present, with visual placeholders otherwise. The hero visual currently uses a generic original SVG at `assets/science-art.svg`, not unpublished experimental figures.
-
-## Check before publishing
-
-Replace draft About text, add only publications that can be verified, upload only images cleared for public release, and confirm how your name appears in Chinese. Keep sensitive unpublished experimental images off the public repository.
-
-## Site structure
-
-- `index.html`: page structure, photo slots
-- `assets/style.css`: typography, palette, layout
-- `assets/content.js`: bilingual text, identity and lists
-- `assets/app.js`: language switch, navigation, content rendering
-- `assets/science-art.svg`: replaceable conceptual image
-- `.nojekyll`: publish as static website without Jekyll processing
+Please replace public-facing draft text with verified biographical details before sharing widely. Do not commit unpublished sensitive research images.
